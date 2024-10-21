@@ -24,9 +24,8 @@ RE3 = R3E';  // RE3 = R3E'
 print(%io(2),'axes articulaires');
 
 a11 = [0; 0; 1];
-a22 = [1; 0; 0];
-a33 = [0; 0; 1];
-a44 = [1; 0; 0];
+a22 = [0; 1; 0];
+a33 = [0; 1; 0];
 
 // initialisations de la base (fixe)
 w0=[0;0;0];
