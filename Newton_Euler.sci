@@ -283,21 +283,16 @@ dVG1yA(i) = (l2/2)*ddT1(i);
 dVG1zA(i) = 0;
 
 //2vG2point
-dVG2xA(i)= 1/2 * ddT2(i) * l3 - 1/2 * dT1(i)^2 * cos(T2(i)) * sin(T2(i)) * l3 - cos(T2(i)) * l2 * dT1(i)^2;
-dVG2yA(i)= -(-1/2 * sin(T2(i)) * ddT1(i) - 1/2 * dT1(i) * cos(T2(i)) * dT2(i)) * l3 + 1/2 * dT1(i) * cos(T2(i)) * dT2(i) * l3 + ddT1(i) * l2;
-dVG2zA(i)=-1/2 * dT1(i)^2 * sin(T2(i))^2 * l3 - 1/2 * dT2(i)^2 * l3 - sin(T2(i)) * l2 * dT1(i)^2;
+dVG2xA(i) = 1/2 * ddT2(i) * l3 - 1/2 * dT1(i)^2 * cos(T2(i)) * sin(T2(i)) * l3 - cos(T2(i)) * l2 * dT1(i)^2;
+dVG2yA(i) = -(-1/2 * sin(T2(i)) * ddT1(i) - 1/2 * dT1(i) * cos(T2(i)) * dT2(i)) * l3 + 1/2 * dT1(i) * cos(T2(i)) * dT2(i) * l3 + ddT1(i) * l2;
+dVG2zA(i) = -1/2 * dT1(i)^2 * sin(T2(i))^2 * l3 - 1/2 * dT2(i)^2 * l3 - sin(T2(i)) * l2 * dT1(i)^2;
 
 //3vG3point
-dVG3xA(i) = -1/2 * dT2(i)^2 * dT3(i)^2 * l4 - 1/2 * dT1(i)^2 * cos(T2(i) + T3(i))^2 * l4 + cos(T3(i)) * (ddT2(i) * l3 - dT1(i)^2 * cos(T2(i)) * sin(T2(i)) * l3) - sin(T3(i)) * (-dT1(i)^2 * sin(T2(i))^2 * l3 - dT2(i)^2 * l3);
-
-dVG3yA(i) = 1/2 * (sin(T3(i)) * (-sin(T2(i)) * ddT1(i) - dT1(i) * cos(T2(i)) * dT2(i)) + cos(T3(i)) * (cos(T2(i)) * ddT1(i) - dT1(i) * sin(T2(i)) * dT2(i)) + (-cos(T3(i)) * dT1(i) * sin(T2(i)) - sin(T3(i)) * dT1(i) * cos(T2(i))) * dT3(i)) * l4 - 1/2 * dT1(i) * sin(T2(i) + T3(i)) * dT2(i) * dT3(i) * l4 + l2 * dT1(i) - (-sin(T2(i)) * ddT1(i) - dT1(i) * cos(T2(i)) * dT2(i)) * l3 + dT1(i) * cos(T2(i)) * dT2(i) * l3;
-
-dVG3zA(i) = -(1/2 * ddT2(i) + 1/2 * ddT3(i)) * l4 - 1/2 * dT1(i)^2 * sin(T2(i) + T3(i)) * cos(T2(i) + T3(i)) * l4 + sin(T3(i)) * (ddT2(i) * l3 - dT1(i)^2 * cos(T2(i)) * sin(T2(i)) * l3) + cos(T3(i)) * (-dT1(i)^2 * sin(T2(i))^2 * l3 - dT2(i)^2 * l3);
-
+dVG3xA(i) = -1/2 * dT2(i)^2 * dT3(i)^2 * l4 - 1/2 * dT1(i)^2 * cos(T2(i) + T3(i))^2 * l4 + cos(T3(i)) * (-cos(T2(i)) * l2 * dT1(i)^2 + ddT2(i) * l3 - dT1(i)^2 * cos(T2(i)) * sin(T2(i)) * l3) - sin(T3(i)) * (-sin(T2(i)) * l2 * dT1(i)^2 - dT1(i)^2 * sin(T2(i))^2 * l3 - dT2(i)^2 * l3);
+dVG3yA(i) = 1/2 * (sin(T3(i)) * (-sin(T2(i)) * ddT1(i) - dT1(i) * cos(T2(i)) * dT2(i)) + cos(T3(i)) * (cos(T2(i)) * ddT1(i) - dT1(i) * sin(T2(i)) * dT2(i)) + (-cos(T3(i)) * dT1(i) * sin(T2(i)) - sin(T3(i)) * dT1(i) * cos(T2(i))) * dT3(i)) * l4 - 1/2 * dT1(i) * sin(T2(i) + T3(i)) * dT2(i) * dT3(i) * l4 + ddT1(i) * l2 - (-sin(T2(i)) * ddT1(i) - dT1(i) * cos(T2(i)) * dT2(i)) * l3 + dT1(i) * cos(T2(i)) * dT2(i) * l3;
+dVG3zA(i) = -(1/2 * ddT2(i) + 1/2 * ddT3(i)) * l4 - 1/2 * dT1(i)^2 * sin(T2(i) + T3(i)) * cos(T2(i) + T3(i)) * l4 + sin(T3(i)) * (-cos(T2(i)) * l2 * dT1(i)^2 + ddT2(i) * l3 - dT1(i)^2 * cos(T2(i)) * sin(T2(i)) * l3) + cos(T3(i)) * (-sin(T2(i)) * l2 * dT1(i)^2 - dT1(i)^2 * sin(T2(i))^2 * l3 - dT2(i)^2 * l3);
 
 end
-
-
 
 /////////////////////////////////////////////
 ////////////////////  W ///////////////////// 
