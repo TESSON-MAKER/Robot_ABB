@@ -1,2 +1,2 @@
 # Robot_ABB
-Calcule infame de matrices pour le robot ABB
+Calcul infame de matrices pour le robot ABB
