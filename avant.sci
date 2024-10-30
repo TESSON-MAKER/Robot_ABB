@@ -16,9 +16,9 @@ v2 = R21 * (v1 + f(w1, P2)); // Vitesse à l'origine O2
 v3 = R32 * (v2 + f(w2, P3)); // Vitesse à l'origine O3
 
 // Accélération de Oi
-dv1 = R10 * (dv0 + f(dw1, P1) + f(w0, f(w0, P1))); // Accélération à O1
-dv2 = R21 * (dv1 + f(dw2, P2) + f(w1, f(w1, P2))); // Accélération à O2
-dv3 = R32 * (dv2 + f(dw3, P3) + f(w2, f(w2, P3))); // Accélération à O3
+dv1 = R10 * (dv0 + f(dw0, P1) + f(w0, f(w0, P1))); // Accélération à O1
+dv2 = R21 * (dv1 + f(dw1, P2) + f(w1, f(w1, P2))); // Accélération à O2
+dv3 = R32 * (dv2 + f(dw2, P3) + f(w2, f(w2, P3))); // Accélération à O3
 
 // DVG point
 dvg1 = f(dw1, PG1) + f(w1, f(w1, PG1)) + dv1; // DVG à PG1
